@@ -228,3 +228,52 @@ section::-webkit-scrollbar-thumb:hover {
   display: flex;
   align-items: center;
 }
+.education-box {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 20px;
+}
+.education-item {
+  padding-bottom: 20px;
+  padding-right: 10px;
+}
+
+.education-item:not(:last-of-type) {
+  /* border-bottom: 1px solid #888; */
+}
+.education-item:first-of-type {
+  border-right: 1px solid #888;
+}
+.duration {
+  font-size: 13px;
+  padding: 1px 3px;
+  font-weight: 400;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #ccc;
+}
+.active {
+  border: 1px solid #78cc6d;
+  color: #78cc6d;
+}
+.degree {
+  font-size: 17px;
+  font-weight: 500;
+  margin: 10px 0 5px;
+  color: #323232;
+}
+.college {
+  font-size: 14px;
+  font-weight: 400;
+  color: #999999;
+}
+.education-para {
+  font-size: 16px;
+  line-height: 1.8em;
+  font-weight: 400;
+}
+.skill-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
