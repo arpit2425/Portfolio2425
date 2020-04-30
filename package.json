@@ -1,0 +1,24 @@
+{
+  "name": "myportfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch ./scss/style.scss -o ./css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arpit2425/Portfolio2425.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arpit2425/Portfolio2425/issues"
+  },
+  "homepage": "https://github.com/arpit2425/Portfolio2425#readme",
+  "dependencies": {
+    "node-sass": "^4.14.0"
+  }
+}
