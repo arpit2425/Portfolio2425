@@ -403,9 +403,8 @@
               </h2>
               <hr />
             </div>
-            <div class="map-box">
-              <div class="map"></div>
-            </div>
+            <div id="map"></div>
+
             <div class="form">
               <form action="" onsubmit="return false">
                 <input type="text" placeholder="Full Name" class="fullname" />
@@ -429,5 +428,27 @@
       </section>
     </div>
     <script type="module" src="./index.js" async defer></script>
+
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfVhblxdBK5jS0cUOo7gZI4cKDU-G3rtg&callback=initMap"
+      type="text/javascript"
+    ></script>
+    <script>
+      var map;
+      function initMap() {
+        var locations = { lat: 26.8467088, lng: 80.9461592 };
+        map = new google.maps.Map(document.getElementById("map"), {
+          center: locations,
+          zoom: 12,
+          gestureHandling: "none",
+          zoomControl: false,
+        });
+        var marker = new google.maps.Marker({
+          position: locations,
+          map: map,
+        });
+      }
+    </script>
   </body>
 </html>
