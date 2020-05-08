@@ -19,6 +19,9 @@
   },
   "homepage": "https://github.com/arpit2425/Portfolio2425#readme",
   "dependencies": {
-    "node-sass": "^4.14.0"
+    "axios": "^0.19.2",
+    "node-sass": "^4.14.0",
+    "nodemailer": "^6.4.6",
+    "nodemailer-mailgun-transport": "^2.0.0"
   }
 }
