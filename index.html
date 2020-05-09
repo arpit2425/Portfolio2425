@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="./output/style.css" />
     <link rel="stylesheet" href="./css/progress.css" />
     <link rel="stylesheet" href="./output/layout.css" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
       rel="stylesheet"
@@ -388,6 +393,21 @@
           <h2 class="abouth2">
             <span style="color: rgb(120, 204, 109);">Get</span> In Touch
           </h2>
+          <div class="skill-item-heading">
+            <i
+              class="fa fa-address-book-o"
+              style="
+                color: rgb(120, 204, 109);
+                font-size: 32px;
+                margin-right: 20px;
+              "
+            ></i>
+            <h2 class="title" style="font-size: 17px; font-weight: 500;">
+              <span style="color: rgb(120, 204, 109);">Location</span>
+            </h2>
+            <hr />
+          </div>
+          <div id="map"></div>
           <section id="form">
             <div class="skill-item-heading">
               <i
@@ -403,7 +423,6 @@
               </h2>
               <hr />
             </div>
-            <div id="map"></div>
 
             <div class="form">
               <form action="" onsubmit="return false">
@@ -431,26 +450,22 @@
 
     <script type="module" src="./index.js" async defer></script>
 
-    <script
-      async
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfVhblxdBK5jS0cUOo7gZI4cKDU-G3rtg&callback=initMap"
-      type="text/javascript"
-    ></script>
     <script>
-      var map;
-      function initMap() {
-        var locations = { lat: 26.8467088, lng: 80.9461592 };
-        map = new google.maps.Map(document.getElementById("map"), {
-          center: locations,
-          zoom: 12,
-          gestureHandling: "none",
-          zoomControl: false,
-        });
-        var marker = new google.maps.Marker({
-          position: locations,
-          map: map,
-        });
-      }
+      mapboxgl.accessToken =
+        "pk.eyJ1IjoiYXJwaXQyNDI1IiwiYSI6ImNrOXpuanRxNzA4Y2EzZnJ0NXh1NDVxaDkifQ.O6s_pKSp_e4XsNQ4WCdHWw";
+      var map = new mapboxgl.Map({
+        container: "map",
+        style: "mapbox://styles/mapbox/streets-v11",
+        center: [80.332793, 26.424857],
+        // center: [12.550343, 55.665957],
+        zoom: 12,
+        interactive: false,
+      });
+      map.scrollZoom.disable();
+      var marker = new mapboxgl.Marker()
+        // .setLngLat([12.550343, 55.665957])
+        .setLngLat([80.332793, 26.424857])
+        .addTo(map);
     </script>
   </body>
 </html>
