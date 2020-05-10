@@ -399,15 +399,16 @@ textarea {
 .submit-btn:hover {
   color: #78cc6d;
 }
-/* .map-box {
+.map-box {
   width: 100%;
   height: 70vh;
+  background-color: #888;
 
   display: flex;
   justify-content: center;
-  padding: 30px;
-} */
+}
 #map {
-  width: 97%;
+  margin-top: 20px;
+  width: 100%;
   height: 50vh;
 }
