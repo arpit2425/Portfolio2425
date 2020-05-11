@@ -416,3 +416,63 @@ a {
   text-decoration: none;
   color: #000;
 }
+
+#mycardss {
+  display: grid;
+  margin-top: 20px;
+
+  grid-template-columns: repeat(2, 1fr);
+}
+.card {
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+
+  margin-left: 20px;
+  text-align: center;
+  box-shadow: 9px 9px 16px rgba(234, 238, 245, 0.6),
+    -9px -9px 16px rgba(233, 229, 229, 0.5);
+}
+.card img {
+  width: 100%;
+}
+.card:hover {
+  transition: 1s all ease-in-out;
+}
+.card h4:hover {
+  transition: 1s all ease-in-out;
+  color: #16bd77;
+}
+.card img:hover {
+  transition: 1s all ease-in-out;
+  transform: scale(1.05);
+  overflow: hidden;
+}
+.card button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 6px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.card h4 {
+  color: #16bd77;
+  font-size: 22px;
+}
+.card button a {
+  color: #fff;
+}
+.card button:hover {
+  background-color: #41a044;
+}
+.btn-box {
+  display: flex;
+  justify-content: space-evenly;
+}
