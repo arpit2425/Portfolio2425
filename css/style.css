@@ -558,8 +558,8 @@ a {
     grid-row: 1/2;
     grid-column: 3/5;
     position: sticky;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
   }
   #contact-section {
     margin-bottom: 0;
@@ -618,10 +618,15 @@ a {
   .container {
     grid-template-rows: 10vh 75vh auto;
   }
+
   .main {
     grid-row: 2/3;
     grid-column: 3/21;
+    margin-bottom: 20px;
   }
+  /* .abouth2 {
+    margin-top: 15vh;
+  } */
   .section-box {
     grid-column: 3/21;
   }
@@ -650,5 +655,31 @@ a {
   }
   .main {
     margin-top: 0;
+  }
+}
+@media only screen and (max-width: 446px) {
+  .main {
+    grid-column: 1/23;
+  }
+  .section-box {
+    grid-column: 1/23;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .foot h4 {
+    font-size: 13px;
+  }
+  input,
+  textarea {
+    font-size: 15px;
+  }
+  .submit-btn {
+    font-size: 15px;
+  }
+  .emailid {
+    font-size: 10px;
+  }
+  .progress-circle {
+    margin: 0 !important;
   }
 }

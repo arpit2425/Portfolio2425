@@ -4,6 +4,7 @@ const url =
   "https://cors-anywhere.herokuapp.com/https://us-central1-otp-react-native-4e01f.cloudfunctions.net/Mailer";
 const submitbtn = document.querySelector(".submit-btn");
 submitbtn.addEventListener("click", async (event) => {
+  alert("clicked");
   submitbtn.textContent = "Sending mail...";
   event.preventDefault();
   const fullname = document.querySelector(".fullname").value;
