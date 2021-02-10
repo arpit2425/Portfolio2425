@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/progress.css" />
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/2849ebaf3b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <ul class="nav">
+          <li id="About">
+            <a
+              href="#aboutme"
+              style="
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+              "
+            >
+              <i class="fas fa-user-tie" style="margin-bottom: 10px;"></i>
+              <span>About</span>
+            </a>
+          </li>
+          <li id="Resume">
+            <a
+              href="#abc"
+              style="
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-decoration: none;
+              "
+            >
+              <i class="fas fa-sticky-note" style="margin-bottom: 10px;"></i>
+              <span>Resume</span>
+            </a>
+          </li>
+          <li id="Work">
+            <a
+              href="#work"
+              style="
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+              "
+            >
+              <i class="fas fa-pencil-alt" style="margin-bottom: 10px;"></i>
+              <span>Work</span>
+            </a>
+          </li>
+          <li id="Contact">
+            <a
+              href="#contact-section"
+              style="
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+              "
+            >
+              <i class="fas fa-phone" style="margin-bottom: 10px;"></i>
+              <span>Contact</span>
+            </a>
+          </li>
+        </ul>
+      </header>
+      <main class="main">
+        <div class="myphoto"></div>
+        <h1 class="myname">Arpit Trivedi</h1>
+        <h3 class="qual">Web Designer, Web Developer</h3>
+
+        <div class="icon-box">
+          <a target="_black" href="https://www.facebook.com/arpit.trivedi.1422"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a target="_black" href="https://github.com/arpit2425/"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a target="_black" href="https://twitter.com/iamarpit2425"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a target="_black" href="https://www.instagram.com/arpit2425/"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+        <div class="foot">
+          <a
+            href="https://resume2425.s3.ap-south-1.amazonaws.com/Arpit_Resume.pdf"
+            ><h4 class="download">
+              Download CV <i class="fas fa-download"></i></h4
+          ></a>
+          <a href="#form"
+            ><h4 class="contact">
+              Contact me <i class="fas fa-arrow-right"></i></h4
+          ></a>
+        </div>
+      </main>
+      <section class="section-box">
+        <section id="aboutme">
+          <h2 class="abouth2">
+            <span style="color: rgb(120, 204, 109);">About</span> Me
+          </h2>
+          <p class="aboutpara">
+            I am Arpit Trivedi, web designer and web developer from India. I
+            have experience in web development and customization, I work with
+            MERN stack. I love to talk with you about our unique.
+          </p>
+          <ul id="aboutlist">
+            <li>
+              <span
+                style="
+                  background-color: rgb(120, 204, 109);
+                  border-radius: 3px;
+                  padding: 3px;
+                "
+                >Age . . . . .</span
+              ><span style="color: rgb(112, 112, 112);">23</span>
+            </li>
+            <li>
+              <span
+                style="
+                  background-color: rgb(120, 204, 109);
+                  border-radius: 3px;
+                  padding: 3px;
+                "
+                >Residence . . . . .</span
+              ><span style="color: rgb(112, 112, 112);">India</span>
+            </li>
+            <li>
+              <span
+                style="
+                  background-color: rgb(120, 204, 109);
+                  border-radius: 3px;
+                  padding: 3px;
+                "
+                >Stack . . . . .</span
+              ><span style="color: rgb(112, 112, 112);">MERN</span>
+            </li>
+          </ul>
+        </section>
+        <section id="services">
+          <h2 class="abouth2">
+            <span style="color: rgb(120, 204, 109);">My</span> Services
+          </h2>
+          <div class="servicecardContainer">
+            <div class="servicecard">
+              <i class="fab fa-react icon" style="font-size: 28px;"></i>
+              <h2 class="cardHeading">Web Design</h2>
+              <p class="servicepara">
+                Modern web designs with HTML, CSS, JavaScript and React.js.
+                Attractive responsive and Dynamic designs.
+              </p>
+            </div>
+            <div class="servicecard">
+              <i class="fab fa-node-js icon" style="font-size: 28px;"></i>
+
+              <h2 class="cardHeading">Web development</h2>
+              <p class="servicepara" style="padding-left: 20px;">
+                Modern Web Development using Mern Stack. Node.js, Express.js,
+                Mongoose, MongoDB. Web APIs using Express.js.
+              </p>
+            </div>
+            <div class="servicecard">
+              <i class="fa fa-android icon" style="font-size: 28px;"></i>
+
+              <h2 class="cardHeading">Mobile App development</h2>
+              <p class="servicepara" style="padding-left: 20px;">
+                Hybrid Mobile Application development using React Native.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="Resume">
+          <h2 class="abouth2" id="abc">
+            <span style="color: rgb(120, 204, 109);">Re</span>sume
+          </h2>
+          <h2 class="education">
+            <i
+              class="fas fa-graduation-cap"
+              style="
+                color: rgb(120, 204, 109);
+                font-size: 40px;
+                margin-right: 10px;
+              "
+            ></i>
+            <span>Education</span>
+          </h2>
+          <div class="education-box">
+            <div class="education-item">
+              <span class="duration active">2016-Present</span>
+              <h2 class="degree">B.Tech</h2>
+              <h3 class="college">Galgotias College</h3>
+              <p class="education-para">
+                Bachelors Of Technology in Computer Science and Engineering From
+                Galgotias College with 82% marks.
+              </p>
+            </div>
+            <div class="education-item">
+              <span class="duration">2014-2015</span>
+              <h2 class="degree">Intermediate</h2>
+              <h3 class="college">U.P. Kirana School</h3>
+              <p class="education-para">
+                Class 12 from U.P. Kirana School, Kanpur (U.P) with 94.2% and
+                100 marks in Computer Science.
+              </p>
+            </div>
+            <div class="education-item">
+              <span class="duration">2012-2013</span>
+              <h2 class="degree">High School</h2>
+              <h3 class="college">U.P. Kirana School</h3>
+              <p class="education-para">
+                Class 10 from U.P. Kirana School, Kanpur (U.P) with 89% and 100
+                marks in Computer Science.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="skills">
+          <h2 class="abouth2">
+            <span style="color: rgb(120, 204, 109);">My</span> Skills
+          </h2>
+          <div class="skill-box">
+            <div class="skill-item-heading">
+              <i
+                class="fas fa-hashtag"
+                style="
+                  color: rgb(120, 204, 109);
+                  font-size: 32px;
+                  margin-right: 20px;
+                "
+              ></i>
+              <h2 class="title" style="font-size: 17px; font-weight: 500;">
+                DESIGN
+              </h2>
+              <hr />
+            </div>
+            <div class="skill-item-group">
+              <div class="skill-item">
+                <h2 class="skill-name">HTML</h2>
+                <div class="pro-full">
+                  <div class="pro-min" style="width: 91%;"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <h2 class="skill-name">CSS</h2>
+                <div class="pro-full">
+                  <div class="pro-min" style="width: 90%;"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <h2 class="skill-name">REACT</h2>
+                <div class="pro-full">
+                  <div class="pro-min" style="width: 75%;"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <h2 class="skill-name">SASS</h2>
+                <div class="pro-full">
+                  <div class="pro-min" style="width: 80%;"></div>
+                </div>
+              </div>
+            </div>
+            <div class="skill-item-heading">
+              <i
+                class="fas fa-hashtag"
+                style="
+                  color: rgb(120, 204, 109);
+                  font-size: 32px;
+                  margin-right: 20px;
+                "
+              ></i>
+              <h2 class="title" style="font-size: 17px; font-weight: 500;">
+                CODING
+              </h2>
+              <hr />
+            </div>
+            <div class="my-skillss">
+              <div
+                style="
+                  width: 100%;
+                  padding: 20px;
+
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <div class="progress-circle over50 p80">
+                  <span>80%</span>
+                  <div class="left-half-clipper">
+                    <div class="first50-bar"></div>
+                    <div class="value-bar"></div>
+                  </div>
+                </div>
+                <h2>Express</h2>
+              </div>
+              <div
+                style="
+                  width: 100%;
+                  padding: 20px;
+
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <div class="progress-circle over50 p75">
+                  <span>75%</span>
+                  <div class="left-half-clipper">
+                    <div class="first50-bar"></div>
+                    <div class="value-bar"></div>
+                  </div>
+                </div>
+                <h2>MongoDB</h2>
+              </div>
+              <div
+                style="
+                  width: 100%;
+                  padding: 20px;
+
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <div class="progress-circle over50 p85">
+                  <span>85%</span>
+                  <div class="left-half-clipper">
+                    <div class="first50-bar"></div>
+                    <div class="value-bar"></div>
+                  </div>
+                </div>
+                <h2>Node.js</h2>
+              </div>
+              <div
+                style="
+                  width: 100%;
+                  padding: 20px;
+
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <div class="progress-circle over50 p60">
+                  <span>60%</span>
+                  <div class="left-half-clipper">
+                    <div class="first50-bar"></div>
+                    <div class="value-bar"></div>
+                  </div>
+                </div>
+                <h2>React Native</h2>
+              </div>
+            </div>
+            <div class="skill-item-heading">
+              <!-- <i  aria-hidden="true"></i> -->
+              <i
+                class="fa fa-tasks"
+                style="
+                  color: rgb(120, 204, 109);
+                  font-size: 32px;
+                  margin-right: 20px;
+                "
+              ></i>
+              <h2 class="title" style="font-size: 17px; font-weight: 500;">
+                Knowledge
+              </h2>
+              <hr />
+            </div>
+            <div class="knowledge-items">
+              <ul style="list-style: none; width: 100%;">
+                <li style="display: flex;">
+                  <i
+                    class="fa fa-check"
+                    style="
+                      color: rgb(120, 204, 109);
+                      font-size: 20px;
+                      margin-right: 20px;
+                    "
+                  ></i>
+                  <h4>Aws Cloud fundamentals</h4>
+                </li>
+                <li style="display: flex;">
+                  <i
+                    class="fa fa-check"
+                    style="
+                      color: rgb(120, 204, 109);
+                      font-size: 20px;
+                      margin-right: 20px;
+                    "
+                  ></i>
+                  <h4>Good knowledge of Authentication and Authorization</h4>
+                </li>
+                <li style="display: flex;">
+                  <i
+                    class="fa fa-check"
+                    style="
+                      color: rgb(120, 204, 109);
+                      font-size: 20px;
+                      margin-right: 20px;
+                    "
+                  ></i>
+                  <h4>Docker</h4>
+                </li>
+                <li style="display: flex;">
+                  <i
+                    class="fa fa-check"
+                    style="
+                      color: rgb(120, 204, 109);
+                      font-size: 20px;
+                      margin-right: 20px;
+                    "
+                  ></i>
+                  <h4>Api Development</h4>
+                </li>
+                <li style="display: flex;">
+                  <i
+                    class="fa fa-check"
+                    style="
+                      color: rgb(120, 204, 109);
+                      font-size: 20px;
+                      margin-right: 20px;
+                    "
+                  ></i>
+                  <h4>Version Control</h4>
+                </li>
+                <li style="display: flex;">
+                  <i
+                    class="fa fa-check"
+                    style="
+                      color: rgb(120, 204, 109);
+                      font-size: 20px;
+                      margin-right: 20px;
+                    "
+                  ></i>
+                  <h4>GraphQL</h4>
+                </li>
+                <li style="display: flex;">
+                  <i
+                    class="fa fa-check"
+                    style="
+                      color: rgb(120, 204, 109);
+                      font-size: 20px;
+                      margin-right: 20px;
+                    "
+                  ></i>
+                  <h4>Redux and Hooks</h4>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section id="work">
+          <div class="skill-item-heading">
+            <i
+              class="fa fa-folder-o"
+              style="
+                color: rgb(120, 204, 109);
+                font-size: 32px;
+                margin-right: 20px;
+              "
+            ></i>
+            <h2 class="title" style="font-size: 17px; font-weight: 500;">
+              Work
+            </h2>
+            <hr />
+          </div>
+
+          <div class="cards" id="mycardss">
+            <div class="card">
+              <img src="./images/tourfly.png" />
+              <h4>Tourfly</h4>
+              <p>
+                Tour website built using node.js, mongodb, mongoose and express
+              </p>
+              <div class="btn-box">
+                <button>
+                  <a target="_blank" href="https://github.com/arpit2425/tourfly"
+                    ><i class="fab fa-github"></i> Source Code</a
+                  >
+                </button>
+                <button>
+                  <a href="https://tourfly.herokuapp.com/" target="_blank"
+                    ><i class="fa fa-globe"></i> Live View</a
+                  >
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./images/beach.png" />
+              <h4>Beach Resort</h4>
+              <p>
+                A beach resort rooms website built using React.js and
+                contentful.
+              </p>
+              <div class="btn-box">
+                <button>
+                  <a
+                    target="_blank"
+                    href="https://github.com/arpit2425/BeachResort"
+                    ><i class="fab fa-github"></i> Source Code</a
+                  >
+                </button>
+                <button>
+                  <a
+                    href="https://5eccb66e2396fe4fa8c235da--beach-resort2425.netlify.app/"
+                    target="_blank"
+                    ><i class="fa fa-globe"></i> Live View</a
+                  >
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./images/surveyss.png" />
+              <h4>Surveyss</h4>
+              <p>
+                A Survey website to send surveys.Technologies used are MERN
+                stack
+              </p>
+              <div class="btn-box">
+                <button>
+                  <a
+                    target="_blank"
+                    href="https://github.com/arpit2425/survyess"
+                    ><i class="fab fa-github"></i> Source Code</a
+                  >
+                </button>
+                <button>
+                  <a href="http://surveyss.herokuapp.com/" target="_blank"
+                    ><i class="fa fa-globe"></i> Live View</a
+                  >
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./images/youtube.jpg" />
+              <h4>youtubeCloneApp</h4>
+              <p>youtubeClone Mobile app using react native.</p>
+              <div class="btn-box">
+                <button>
+                  <a
+                    target="_blank"
+                    href="https://github.com/arpit2425/youtubeCloneApp"
+                    ><i class="fab fa-github"></i> Source Code</a
+                  >
+                </button>
+                <button>
+                  <a
+                    href="https://expo.io/@arpit2425/youtubeClone"
+                    target="_blank"
+                    ><i class="fa fa-globe"></i> Live View</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contact-section">
+          <h2 class="abouth2">
+            <span style="color: rgb(120, 204, 109);">Get</span> In Touch
+          </h2>
+          <div class="skill-item-heading">
+            <i
+              class="fa fa-address-book-o"
+              style="
+                color: rgb(120, 204, 109);
+                font-size: 32px;
+                margin-right: 20px;
+              "
+            ></i>
+            <h2 class="title" style="font-size: 17px; font-weight: 500;">
+              <span style="color: rgb(120, 204, 109);">Location</span>
+            </h2>
+            <hr />
+          </div>
+
+          <div id="map"></div>
+          <ul id="aboutlist">
+            <li>
+              <span
+                style="
+                  background-color: rgb(120, 204, 109);
+                  border-radius: 3px;
+                  padding: 3px;
+                "
+                >Address . . . . .</span
+              ><span style="color: rgb(112, 112, 112);">Kanpur, UP</span>
+            </li>
+            <li>
+              <span
+                class="emailid"
+                style="
+                  background-color: rgb(120, 204, 109);
+                  border-radius: 3px;
+                  padding: 3px;
+                "
+                >Email . . .</span
+              ><span class="emailid" style="color: rgb(112, 112, 112);"
+                >arpittrivedi2425@gmail.com</span
+              >
+            </li>
+            <li>
+              <span
+                style="
+                  background-color: rgb(120, 204, 109);
+                  border-radius: 3px;
+                  padding: 3px;
+                "
+                >Phone . . . . .</span
+              ><span style="color: rgb(112, 112, 112);">(+91)8960767360</span>
+            </li>
+          </ul>
+          <section id="form">
+            <div class="skill-item-heading">
+              <i
+                class="fa fa-address-book-o"
+                style="
+                  color: rgb(120, 204, 109);
+                  font-size: 32px;
+                  margin-right: 20px;
+                "
+              ></i>
+              <h2 class="title" style="font-size: 17px; font-weight: 500;">
+                <span style="color: rgb(120, 204, 109);">Contact</span> Form
+              </h2>
+              <hr />
+            </div>
+
+            <div class="form">
+              <form action="" onsubmit="return false">
+                <input
+                  type="text"
+                  placeholder="Full Name"
+                  class="fullname"
+                  required
+                />
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  class="email"
+                  required
+                />
+                <textarea
+                  style="resize: none;"
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="3"
+                  required
+                  placeholder="Message"
+                ></textarea>
+                <button type="submit" class="submit-btn">
+                  Send Message
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+              </form>
+            </div>
+          </section>
+        </section>
+      </section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+
+    <script src="index.js" async defer></script>
+
+    <script>
+      mapboxgl.accessToken =
+        'pk.eyJ1IjoiYXJwaXQyNDI1IiwiYSI6ImNrOXpuanRxNzA4Y2EzZnJ0NXh1NDVxaDkifQ.O6s_pKSp_e4XsNQ4WCdHWw'
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [80.332793, 26.424857],
+        // center: [12.550343, 55.665957],
+        zoom: 12,
+        interactive: false
+      })
+      // map.scrollZoom.disable();
+      var marker = new mapboxgl.Marker()
+        // .setLngLat([12.550343, 55.665957])
+        .setLngLat([80.332793, 26.424857])
+        .addTo(map)
+    </script>
+  </body>
+</html>
