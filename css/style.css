@@ -32,7 +32,7 @@
   height: 100%;
 
   display: grid;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   /* display: flex;
 
   flex-direction: column;
@@ -63,8 +63,11 @@
 .nav #Work {
   grid-row: 3/4;
 }
-.nav #Contact {
+.nav #Experience {
   grid-row: 4/5;
+}
+.nav #Contact {
+  grid-row: 5/6;
 }
 .main {
   z-index: 5;
